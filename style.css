@@ -1,0 +1,85 @@
+body {
+    background-color: #8A0303; /* Blood red background */
+    font-family: 'Impact', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4A0101; /* Darker red for header */
+}
+
+h1 {
+    margin: 0;
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    background-color: #4A0101; /* Darker red for items */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.item-options {
+    margin-top: 10px;
+}
+
+.item-options input[type="checkbox"] {
+    display: none;
+}
+
+.item-options input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.item-options input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #8A0303; /* Blood red background for checkbox */
+}
+
+.item-options input[type="checkbox"]:checked + label:before {
+    background-color: white;
+}
+
+.item-options input[type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    left: 4px;
+    top: 0;
+    font-size: 20px;
+    color: #8A0303; /* Blood red check mark */
+}
