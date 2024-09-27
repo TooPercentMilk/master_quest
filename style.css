@@ -15,14 +15,14 @@ header {
 h1 {
     margin: 0;
 }
-
 .item-list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Align items to the start (left) */
+    padding-left: 3vw;
 }
 
 .item {
@@ -30,8 +30,12 @@ h1 {
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
-    width: 200px;
+    width: 300px;
+    height: 200px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .item h2 {
@@ -42,10 +46,15 @@ h1 {
 .item img {
     max-width: 100%;
     border-radius: 10px;
+    transform: scale(1.3); /* Scale the image by 1.2 times */
 }
 
 .item-options {
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Arrange items horizontally */
 }
 
 .item-options input[type="checkbox"] {
@@ -83,14 +92,6 @@ h1 {
     font-size: 20px;
     color: #8A0303; /* Blood red check mark */
 }
-/*<aside class="stats-panel">
-    <h2>Progress</h2>
-    <ul>
-        <li>Total Bones: 600</li>
-        <li>Total Easter Skulls: 20</li>
-        <li>Completed Maps: 15</li>
-    </ul>
-</aside>*/
 
 .stats-panel {
     position: fixed;
@@ -118,4 +119,13 @@ h1 {
 
 main {
     margin-right: 270px; /* Adjust to make space for the stats panel */
+}
+.map {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: center;
+}
+
+.map img {
+    margin-right: 20px; /* Add some space between the image and the checkbox */
 }
