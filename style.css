@@ -62,7 +62,7 @@ h1 {
 .item-options {
     margin-top: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: left;
     gap: 15px;
@@ -135,6 +135,10 @@ h1 {
     height: auto; /* Maintain aspect ratio */
 }
 .egg {
-    width: 80px;
+    width: 65px;
     height: auto; /* Maintain aspect ratio */
+}
+
+.darkened {
+    filter: brightness(20%);
 }
