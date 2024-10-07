@@ -119,6 +119,7 @@ h1 {
     overflow-y: auto;
     text-align: center; /* Center the text */
     bottom: 120px; /* Add bottom buffer to match the top buffer */
+    font-size: larger;
 }
 
 .stats-panel ul {
