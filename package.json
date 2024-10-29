@@ -1,0 +1,23 @@
+{
+  "name": "master_quest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "master_quest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TooPercentMilk/master_quest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TooPercentMilk/master_quest/issues"
+  },
+  "homepage": "https://github.com/TooPercentMilk/master_quest#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
