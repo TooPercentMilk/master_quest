@@ -2,7 +2,7 @@
   "name": "master_quest",
   "version": "1.0.0",
   "description": "",
-  "main": "master_quest.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

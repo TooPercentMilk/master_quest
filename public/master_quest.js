@@ -1,19 +1,3 @@
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'master_quest.html'));
-    readFile('./index.html', 'utf8', (err, html) => {
-      if (err) {
-        res.status(500).send('There was an error with your request.');
-      }
-      response.send(html)
-    });
-});
-
-app.listen(process.env.PORT || 3000, () => console.log('App available on http://localhost:3000'));
-const { readFile } = require('fs');
-
 let bone_list = new Array(21).fill(false);
 let egg_list = new Array(8).fill(false);
 let bone_count = 0;
@@ -21,7 +5,6 @@ let egg_count = 0;
 
 let bone_count_element = document.getElementById("bone_count_display");
 let egg_count_element = document.getElementById("egg_count_display");
-
 
 const skull_images = document.querySelectorAll('input[type="image"].skull');
 const egg_images = document.querySelectorAll('input[type="image"].egg');
