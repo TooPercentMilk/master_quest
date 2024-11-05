@@ -26,6 +26,13 @@ fetch('map_data.csv')
         eggedex++;
       }
     }
+    skull_images.forEach((image, index) => {
+      updateImageShading(image, bone_list[index]);
+    });
+    
+    egg_images.forEach((image, index) => {
+      updateImageShading(image, egg_list[index]);
+    });
   })
   .catch(error => console.error('Error fetching map data:', error));
 
@@ -67,10 +74,3 @@ egg_images.forEach((image, index) => {
 
 console.log(bone_list);
 
-skull_images.forEach((image, index) => {
-  updateImageShading(image, bone_list[index]);
-});
-
-egg_images.forEach((image, index) => {
-  updateImageShading(image, egg_list[index]);
-});
