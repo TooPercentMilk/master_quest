@@ -1,5 +1,7 @@
 let bone_list = new Array(21).fill(false);
 let egg_list = new Array(8).fill(false);
+let map_list = new Array(21).fill(false);
+
 let bone_count = 0;
 let egg_count = 0;
 
@@ -8,6 +10,27 @@ let egg_count_element = document.getElementById("egg_count_display");
 
 const skull_images = document.querySelectorAll('input[type="image"].skull');
 const egg_images = document.querySelectorAll('input[type="image"].egg');
+
+fetch('map_data.csv')
+  .then(response => response.text())
+  .then(data => {
+    const rows = data.split('\n');
+    let bonedex = 0;
+    let eggedex = 0;
+    rows.forEach(row => {
+      const columns = row.split(',');
+      map_list = columns[0].split(';').map(value => value.trim() === 'true');
+      bone_list[bonedex] = map_list[1];
+      if (map_list[2] < 2) {
+        egg_list[eggedex] = map_list[2];
+        eggedex++;
+      }
+      bonedex++;
+    });
+  })
+  .catch(error => console.error('Error fetching map data:', error));
+
+
 
 function updateImageShading(image, status) {
     bone_count = bone_list.filter(value => value === true).length;
@@ -46,3 +69,4 @@ egg_images.forEach((image, index) => {
   });
 
 console.log(bone_list);
+
