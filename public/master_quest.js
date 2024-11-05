@@ -15,21 +15,19 @@ fetch('map_data.csv')
   .then(response => response.text())
   .then(data => {
     const rows = data.split('\n');
-    let bonedex = 0;
     let eggedex = 0;
-    rows.forEach(row => {
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
       const columns = row.split(',');
       map_list = columns[0].split(';').map(value => value.trim() === 'true');
-      bone_list[bonedex] = map_list[1];
+      bone_list[i - 1] = map_list[1];
       if (map_list[2] < 2) {
         egg_list[eggedex] = map_list[2];
         eggedex++;
       }
-      bonedex++;
-    });
+    }
   })
   .catch(error => console.error('Error fetching map data:', error));
-
 
 
 function updateImageShading(image, status) {
