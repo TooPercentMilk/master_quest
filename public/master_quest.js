@@ -10,7 +10,7 @@ let egg_count_element = document.getElementById("egg_count_display");
 
 const skull_images = document.querySelectorAll('input[type="image"].skull');
 const egg_images = document.querySelectorAll('input[type="image"].egg');
-
+// test message
 fetch('map_data.csv')
   .then(response => response.text())
   .then(data => {
