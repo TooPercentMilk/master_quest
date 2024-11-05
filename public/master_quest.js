@@ -19,10 +19,10 @@ fetch('map_data.csv')
     for (let i = 1; i < rows.length; i++) {
       const row = rows[i];
       const columns = row.split(',');
-      map_list = columns[0].split(';').map(value => value.trim() === 'true');
-      bone_list[i - 1] = map_list[1];
-      if (map_list[2] < 2) {
-        egg_list[eggedex] = map_list[2];
+      map_list[i - 1] = columns[0];
+      bone_list[i - 1] = +columns[1];
+      if (+columns[2][0] < 2) {
+        egg_list[eggedex] = +columns[2][0];
         eggedex++;
       }
     }
