@@ -31,9 +31,9 @@ fetch('map_data.csv')
 
 
 function updateImageShading(image, status) {
-    bone_count = bone_list.filter(value => value === true).length;
+    bone_count = bone_list.filter(value => value == true).length;
     bone_count_element.innerHTML = bone_count;
-    egg_count = egg_list.filter(value => value === true).length;
+    egg_count = egg_list.filter(value => value == true).length;
     egg_count_element.innerHTML = egg_count;
     if (status) {
       image.classList.remove('darkened'); // Remove darkening when true
