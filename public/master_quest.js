@@ -37,7 +37,6 @@ function updateImageShading(image, status) {
     egg_count_element.innerHTML = egg_count;
     if (status) {
       image.classList.remove('darkened'); // Remove darkening when true
-      bone_count = trueCount;
     } else {
       image.classList.add('darkened'); // Apply darkening when false
     }
@@ -68,3 +67,10 @@ egg_images.forEach((image, index) => {
 
 console.log(bone_list);
 
+skull_images.forEach((image, index) => {
+  updateImageShading(image, bone_list[index]);
+});
+
+egg_images.forEach((image, index) => {
+  updateImageShading(image, egg_list[index]);
+});
