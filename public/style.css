@@ -132,14 +132,23 @@ h1 {
 }
 
 .skull {
-    width: 100px;
+    width: 3vw;
     height: auto; /* Maintain aspect ratio */
 }
 .egg {
-    width: 65px;
+    width: 2vw;
     height: auto; /* Maintain aspect ratio */
 }
 
 .darkened {
     filter: brightness(20%);
+}
+
+@media (max-width: 768px) {
+    .item h2 {
+        font-size: 1.1em;
+    }
+    header {
+        padding: 10px;
+    }
 }
