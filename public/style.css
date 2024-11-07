@@ -108,7 +108,7 @@ h1 {
 
 .stats-panel {
     position: fixed;
-    top:10px;
+    top:35vh;
     right: 0;
     width: 28vw;
     background-color: #4A0101; /* Darker red for stats panel */
