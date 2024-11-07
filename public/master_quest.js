@@ -1,5 +1,5 @@
 let bone_list = new Array(21).fill(false);
-let egg_list = new Array(8).fill(false);
+let egg_list = new Array(9).fill(false);
 let map_list = new Array(21).fill(false);
 
 let bone_count = 0;
