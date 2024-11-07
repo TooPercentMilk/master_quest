@@ -26,7 +26,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align items to the start (left) */
-    padding-left: 3vw;
+    padding-left: 2vw;
 }
 .item {
     margin: 0.6vw;
@@ -65,7 +65,7 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    gap: 15px;
+    gap: 1vw;
 }
 
 .item-options input[type="checkbox"] {
@@ -74,11 +74,10 @@ h1 {
 
 .item-options input[type="checkbox"] + label {
     position: relative;
-    padding-left: 25px;
     cursor: pointer;
     user-select: none;
     text-align: left;
-    padding-left: 30px;
+    padding-left: 3vw;
 }
 
 .item-options input[type="checkbox"] + label:before {
