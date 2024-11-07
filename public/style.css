@@ -108,18 +108,17 @@ h1 {
 
 .stats-panel {
     position: fixed;
-    top: 80px; /* Adjust this value to match the height of the header banner */
+    margin-top: 20vh;
     right: 0;
     width: 28vw;
     background-color: #4A0101; /* Darker red for stats panel */
     color: white;
     padding: 2vw;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    height: calc(100% - 200px); /* Adjust height to account for the header and bottom buffer */
+    height: 30vh; /* Adjust height to account for the header and bottom buffer */
     overflow-y: auto;
     text-align: center; /* Center the text */
-    bottom: 120px; /* Add bottom buffer to match the top buffer */
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .stats-panel ul {
@@ -161,5 +160,8 @@ h1 {
     }
     .map {
         width: 40vw; 
+    }
+    .stats-panel {
+        font-size: 1.2em;
     }
 }
