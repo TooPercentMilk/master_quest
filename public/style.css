@@ -132,11 +132,11 @@ h1 {
 }
 
 .skull {
-    width: 3vw;
+    width: 9vw;
     height: auto; /* Maintain aspect ratio */
 }
 .egg {
-    width: 2vw;
+    width: 6vw;
     height: auto; /* Maintain aspect ratio */
 }
 
