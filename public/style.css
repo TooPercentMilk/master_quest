@@ -50,13 +50,13 @@ h1 {
 .item img {
     max-width: 100%;
     border-radius: 10px;
-    transform: scale(1); /* Scale the image by 1 times */
+    transform: scale(0.9); /* Scale the image by 1 times */
 }
 
 .map {
     background-color: #4A0101; /* Darker red for items */
-    width: 35vw; /* Ensure the map div takes full width of the item */
-    height: auto; /* Adjust height to content */
+    width: 35vw; 
+    height: auto; 
 }
 
 .item-options {
@@ -109,7 +109,7 @@ h1 {
     position: fixed;
     top: 80px; /* Adjust this value to match the height of the header banner */
     right: 0;
-    width: 33.33vw; /* 1/3 of the viewport width */
+    width: 25vw; /* 1/3 of the viewport width */
     background-color: #4A0101; /* Darker red for stats panel */
     color: white;
     padding: 20px;
@@ -118,7 +118,7 @@ h1 {
     overflow-y: auto;
     text-align: center; /* Center the text */
     bottom: 120px; /* Add bottom buffer to match the top buffer */
-    font-size: larger;
+    font-size: 1.25em;
 }
 
 .stats-panel ul {
