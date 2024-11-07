@@ -30,7 +30,7 @@ h1 {
 }
 .item {
     margin: 0.5vw;
-    padding: 2vw;
+    padding: 1vw;
     border-radius: 1vw;
     /* width: 30vw; 30% of the viewport width */
     text-align: center;
