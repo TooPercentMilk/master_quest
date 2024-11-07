@@ -29,9 +29,9 @@ h1 {
     padding-left: 2vw;
 }
 .item {
-    margin: 0.6vw;
+    margin: 0.5vw;
     padding: 2vw;
-    border-radius: 10px;
+    border-radius: 1vw;
     /* width: 30vw; 30% of the viewport width */
     text-align: center;
     display: flex;
@@ -39,7 +39,7 @@ h1 {
     align-items: center;
     justify-content: space-between; /* Space items evenly */
     height: auto; /* Adjust height to content */
-    gap: 15px;
+    gap: 1vh;
 }
 
 .item h2 {
@@ -50,7 +50,7 @@ h1 {
 .item img {
     max-width: 100%;
     border-radius: 10px;
-    transform: scale(0.9); /* Scale the image by 1 times */
+    transform: scale(1); /* Scale the image by 1 times */
 }
 
 .map {
