@@ -108,14 +108,14 @@ h1 {
 
 .stats-panel {
     position: fixed;
-    margin-top: 20vh;
+    top:10px;
     right: 0;
     width: 28vw;
     background-color: #4A0101; /* Darker red for stats panel */
     color: white;
     padding: 2vw;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    height: 30vh; /* Adjust height to account for the header and bottom buffer */
+    height: 30vh;
     overflow-y: auto;
     text-align: center; /* Center the text */
     font-size: 1.5em;
